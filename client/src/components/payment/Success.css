@@ -1,0 +1,120 @@
+/* Full page center */
+.success-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0b0b0b, #1a1a1a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Card */
+.success-card {
+  background: #111;
+  border-radius: 16px;
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(212, 175, 55, 0.25);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  animation: scaleIn 0.5s ease-in-out;
+}
+
+/* Success Icon */
+.success-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  background: linear-gradient(135deg, #d4af37, #f5e58c);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.6);
+}
+
+.success-icon span {
+  font-size: 40px;
+  color: #111;
+  font-weight: bold;
+}
+
+/* Title */
+.success-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+/* Divider */
+.success-divider {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #d4af37, #f5e58c);
+  margin: 15px auto 20px;
+  border-radius: 2px;
+}
+
+/* Text */
+.success-text {
+  font-size: 15px;
+  color: #cccccc;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Buttons */
+.success-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-outline {
+  padding: 12px 28px;
+  font-size: 15px;
+  border-radius: 30px;
+  border: 1px solid #d4af37;
+  background: transparent;
+  color: #d4af37;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: #d4af37;
+  color: #111;
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.4);
+}
+
+/* Footer text */
+.success-footer {
+  margin-top: 30px;
+  font-size: 13px;
+  color: #999;
+}
+
+/* Animation */
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .success-card {
+    padding: 30px 20px;
+  }
+
+  .success-title {
+    font-size: 24px;
+  }
+}

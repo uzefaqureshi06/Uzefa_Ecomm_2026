@@ -1,0 +1,281 @@
+/* ================= BASIC ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  font-family: Arial, sans-serif;
+}
+
+/* ================= HEADER ================= */
+.header {
+  height: 90px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.logo img {
+  margin-top: 19px;
+  width: 120px;
+}
+
+/* ================= MENU ICONS ================= */
+.menu-icons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* ================= LOGIN BUTTON ================= */
+.login-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  color: gold;
+  border: 1px solid gold;
+  padding: 0 14px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background: gold;
+  color: #000;
+}
+
+/* ================= USER AVATAR ================= */
+.user-avatar {
+  position: relative;
+}
+
+.user-avatar img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid gold;
+}
+/* ===== AVATAR ===== */
+.avatar-wrapper {
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 100%;
+}
+
+.navbar-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ffd700;
+  cursor: pointer;
+}
+
+.avatar-fallback {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* ================= USER DROPDOWN ================= */
+.user-dropdown {
+  position: absolute;
+  top: 48px;
+  right: 0;
+  background: #000;
+  color: gold;
+  border: 1px solid gold;
+  border-radius: 8px;
+  padding: 10px;
+  width: 150px;
+  z-index: 1200;
+}
+
+.user-dropdown p {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.user-dropdown button {
+  width: 100%;
+  background: gold;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.user-dropdown button:hover {
+  opacity: 0.85;
+}
+
+/* ================= CART ICON ================= */
+.cart-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-container i {
+  color: #ffd700;
+  font-size: 26px;
+}
+
+.cart-count {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background: #ffd700;
+  color: #000;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+/* ================= OVERLAY ================= */
+.cart-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+/* ================= MINI CART ================= */
+.mini_cart {
+  position: fixed;
+  top: 0;
+  right: -360px;
+  width: 360px;
+  height: 100vh;
+  background: #111;
+  color: #fff;
+  padding: 20px;
+  z-index: 1100;
+  transition: right 0.3s ease;
+  overflow-y: auto;
+}
+
+.mini_cart.open {
+  right: 0;
+}
+
+/* ================= CART HEADER ================= */
+.cart_close {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cart_close h3 {
+  color: rgb(232, 199, 16);
+}
+
+.cart_close i {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* ================= CART ITEM ================= */
+.cart_item {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #333;
+}
+
+.cart_img img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.cart_info p {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.quantity {
+  font-size: 13px;
+  color: #ccc;
+  display: block;
+}
+
+.price_cart {
+  color: rgb(218, 187, 11);
+  font-weight: 600;
+  display: block;
+  margin-top: 4px;
+}
+
+/* ================= TOTAL ================= */
+.cart_total {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* ================= BUTTONS ================= */
+.mini_cart_footer a {
+  display: block;
+  text-align: center;
+  padding: 12px;
+  background: #333;
+  color: #fff;
+  margin-top: 10px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.mini_cart_footer .active {
+  background: #e1c315;
+  color: #000;
+}
+
+.qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 5px 0;
+}
+
+.qty-controls button {
+  background: #111;
+  border: 1px solid #444;
+  color: white;
+  padding: 4px;
+  cursor: pointer;
+}
+.remove-btn {
+  background: transparent;
+  border: none;
+  color: #999;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.remove-btn:hover {
+  color: red;
+}

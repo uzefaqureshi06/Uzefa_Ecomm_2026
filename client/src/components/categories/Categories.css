@@ -1,0 +1,47 @@
+/* Category */
+
+.categories {
+  background-color: black;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.cat-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.cat-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.cat-item {
+  text-align: center;
+}
+
+.cat-item img {
+  width: 134px;
+  height: 134px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: 0.3s;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.cat-item img:hover {
+  transform: scale(1.07);
+}
+
+.cat-item p {
+ color: #ffffff;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
