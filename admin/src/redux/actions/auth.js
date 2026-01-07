@@ -1,5 +1,10 @@
 import * as api from "../api";
-import { AUTH, FETCH_USER_ID, FETCH_USER } from "../constants/actionTypes";
+import {
+  AUTH,
+  FETCH_USER_ID,
+  FETCH_USER,
+  DELETE_USER,
+} from "../constants/actionTypes";
 import { toast } from "react-toastify";
 export const signin = (newUser) => async (dispatch) => {
   try {
@@ -87,7 +92,7 @@ export const getUserByID = (id) => async (dispatch) => {
 export const deleteUser = (id) => async (dispatch) => {
   try {
     await api.deleteUser(id);
-    dispatch({ type: DELETE_BLOG, payload: id });
+    dispatch({ type: DELETE_USER, payload: id });
   } catch (error) {
     console.log(error);
   }
